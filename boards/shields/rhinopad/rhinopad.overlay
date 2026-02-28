@@ -1,5 +1,5 @@
-#include "kiwi36-layouts.dtsi"
-#include "kiwi36.dtsi"
+#include "rhinopad-layouts.dtsi"
+#include "rhinopad.dtsi"
 
 &encoder {
 	status = "okay";
