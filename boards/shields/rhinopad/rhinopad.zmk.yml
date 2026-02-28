@@ -1,0 +1,10 @@
+file_format: "1"
+id: rhinopad
+name: rhinopad
+type: shield
+url: https://github.com/klouderone/zmk-config-rhino
+requires: [pro_micro]
+features:
+  - keys
+  - display
+  - studio
