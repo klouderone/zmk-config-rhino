@@ -257,7 +257,7 @@ nice_view_spi: &spi0 {
     * | td14 | td15 | td16 |  L2  | btl  |  
     * `----------------------------------'          
     */                                        
-`
+
     bindings = <   
 
         &td7            &td8          &td9            &td10            &td11
