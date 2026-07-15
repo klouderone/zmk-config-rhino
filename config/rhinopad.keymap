@@ -70,7 +70,7 @@ nice_view_spi: &spi0 {
             label = "Join, Explode";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(F6)>, <&kp LC(F7)>;
+            bindings = <&kp LC(F6)>, <&kp LC(F7)>, <&kp LC(LSFT(9))>;
         };
 
     td4: tap_dance_4 {
@@ -177,6 +177,30 @@ nice_view_spi: &spi0 {
             bindings = <&kp LC(N8)>, <&kp LC(N9)>, <&kp LC(LS(D))>;
         };
 
+    td17: tap_dance_17 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Project, Project To CPlane ";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp LC(LSFT(0))>, <&kp LC(LSFT(1))>, <&kp LC(LSFT(2))>;
+        };
+
+    td18: tap_dance_18 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Project, Project To CPlane ";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp LC(LSFT(3))>, <&kp LC(LSFT(4))>, <&kp LC(LSFT(5))>;
+        };
+
+    td19: tap_dance_19 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Project, Project To CPlane ";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp LC(LSFT(6))>, <&kp LC(LSFT(7))>, <&kp LC(LSFT(8))>;
+        };
+
     copy: copy {
             compatible = "zmk,behavior-mod-morph";
             label = "copy";
@@ -260,7 +284,7 @@ nice_view_spi: &spi0 {
 
     bindings = <   
 
-        &kp N0       &kp N1        &kp N2        &kp N3       &kp F10
+        &kp N0       &td17         &td18         &td19       &kp F10
                      &kp N4        &kp N5        &kp N6                                   
         &kp DOT      &kp N7        &kp N8        &kp N9       &none
         >;
@@ -277,7 +301,7 @@ nice_view_spi: &spi0 {
     * `------+------+------+------+------`                      
     *        | PF1  | PF2  | PF3  |                           
     * ,------+------+------+------+------,  
-    * | stuk |      |      |      | L-BT |  
+    * |      |      |      |      | L-BT |  
     * `----------------------------------'          
     */                                        
 
@@ -285,7 +309,7 @@ nice_view_spi: &spi0 {
 
         &bt BT_CLR      &none         &none           &none            &bootloader
                         &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2                                   
-        &studio_unlock           &none         &none           &none            &tog BLUETOOTH
+        &studio_unlockk          &none         &none           &none            &tog BLUETOOTH
         >;
 
         sensor-bindings = <&rot_kp LC(Z) LC(Y)>;
