@@ -257,7 +257,7 @@ nice_view_spi: &spi0 {
     * | td14 | td15 | td16 |  L2  | btl  |  
     * `----------------------------------'          
     */                                        
-
+`
     bindings = <   
 
         &td7            &td8          &td9            &td10            &td11
@@ -309,7 +309,7 @@ nice_view_spi: &spi0 {
 
         &bt BT_CLR      &none         &none           &none            &bootloader
                         &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2                                   
-        &studio_unlockk          &none         &none           &none            &tog BLUETOOTH
+        &studio_unlock          &none         &none           &none            &tog BLUETOOTH
         >;
 
         sensor-bindings = <&rot_kp LC(Z) LC(Y)>;
