@@ -70,7 +70,7 @@ nice_view_spi: &spi0 {
             label = "Join, Explode";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(F6)>, <&kp LC(F7)>, <&kp LC(LSFT(9))>;
+            bindings = <&kp LC(F6)>, <&kp LC(F7)>, <&kp LC(LS(9))>;
         };
 
     td4: tap_dance_4 {
@@ -171,7 +171,7 @@ nice_view_spi: &spi0 {
 
     td16: tap_dance_16 {
             compatible = "zmk,behavior-tap-dance";
-            label = "Project, Project To CPlane ";
+            label = "Project, Project To CPlane";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp LC(N8)>, <&kp LC(N9)>, <&kp LC(LS(D))>;
@@ -182,7 +182,7 @@ nice_view_spi: &spi0 {
             label = "Project, Project To CPlane ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LSFT(0))>, <&kp LC(LSFT(1))>, <&kp LC(LSFT(2))>;
+            bindings = <&kp LC(LS(1))>, <&kp LC(LS(2))>;
         };
 
     td18: tap_dance_18 {
@@ -190,7 +190,7 @@ nice_view_spi: &spi0 {
             label = "Project, Project To CPlane ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LSFT(3))>, <&kp LC(LSFT(4))>, <&kp LC(LSFT(5))>;
+            bindings = <&kp LC(LS(3))>, <&kp LC(LS(4))>, <&kp LC(LS(5))>;
         };
 
     td19: tap_dance_19 {
@@ -198,7 +198,7 @@ nice_view_spi: &spi0 {
             label = "Project, Project To CPlane ";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LSFT(6))>, <&kp LC(LSFT(7))>, <&kp LC(LSFT(8))>;
+            bindings = <&kp LC(LS(6))>, <&kp LC(LS(7))>, <&kp LC(LS(8))>;
         };
 
     copy: copy {
