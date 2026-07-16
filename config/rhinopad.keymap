@@ -67,7 +67,7 @@ nice_view_spi: &spi0 {
 
     td3: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
-            label = "Join, Explode";
+            label = "Join, Explode, MergeCoplanarSrf";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp LC(F6)>, <&kp LC(F7)>, <&kp LC(LS(9))>;
@@ -179,26 +179,26 @@ nice_view_spi: &spi0 {
 
     td17: tap_dance_17 {
             compatible = "zmk,behavior-tap-dance";
-            label = "Project, Project To CPlane ";
+            label = "TBC, TBC";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LS(1))>, <&kp LC(LS(2))>;
+            bindings = <&kp LC(LS(N1))>, <&kp LC(LS(N2))>;
         };
 
     td18: tap_dance_18 {
             compatible = "zmk,behavior-tap-dance";
-            label = "Project, Project To CPlane ";
+            label = "Cplane2Srf, ResetCplaneTop, 3ptCplane";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LS(3))>, <&kp LC(LS(4))>, <&kp LC(LS(5))>;
+            bindings = <&kp LC(LS(N3))>, <&kp LC(LS(N4))>, <&kp LC(LS(N5))>;
         };
 
     td19: tap_dance_19 {
             compatible = "zmk,behavior-tap-dance";
-            label = "Project, Project To CPlane ";
+            label = "ShadedView GhostedView, MaterialView";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp LC(LS(6))>, <&kp LC(LS(7))>, <&kp LC(LS(8))>;
+            bindings = <&kp LC(LS(N6))>, <&kp LC(LS(N7))>, <&kp LC(LS(N8))>;
         };
 
     copy: copy {
@@ -284,8 +284,8 @@ nice_view_spi: &spi0 {
 
     bindings = <   
 
-        &kp N0       &td17         &td18         &td19       &kp F10
-                     &kp N4        &kp N5        &kp N6                                   
+        &kp N0       &kp N4        &kp N5        &kp N6       &kp F10
+                     &td18         &td19         &td17                                   
         &kp DOT      &kp N7        &kp N8        &kp N9       &none
         >;
 
